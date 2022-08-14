@@ -16,7 +16,7 @@ function Withdraw(){
         else {
 
 
-        let total = Number(balance) + Number(currentWithdraw)
+        let total = Number(balance) - Number(currentWithdraw)
         let sumWithdraw = Number(withdraw) + Number(currentWithdraw)
         setWithdraw(sumWithdraw)
         setBalance(total)
@@ -41,10 +41,10 @@ function Withdraw(){
 
     function handleError() {
         if(Number.isNaN(Number(currentWithdraw))){
-            setStatus('The Deposit Entered Is Not A Number')
+            setStatus('The Withdrawal Entered Is Not A Number')
         }
         if ((Number(currentWithdraw)) > Number(balance)){
-            setStatus('The Deposit Cannot Be A Negative Number')
+            setStatus('The Withdrawal Cannot Exceed Balance')
         }
         setCurrentWithdraw('')
         setValidTransaction(false)
