@@ -1,0 +1,47 @@
+html, body {
+    background-image:url("bluebrick.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation */
+
+.customNav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navcolor {
+    color:cadetblue !important;
+}
+
+a:hover{
+    background-color:mintcream;
+}
+
+/* Card Opacity */
+
+.opacity-1 {
+        opacity: 0.8!important;
+        transition: opacity .25s ease-in-out!important;
+        -moz-transition: opacity .25s ease-in-out!important;
+        -webkit-transition: opacity .25s ease-in-out!important;
+}
+.opacity-1:hover {
+    opacity:1!important;
+}
+
+/* text Styling */
+
+.centertext {
+    text-align: center;
+}
+
+.lefttext, h4, h5 {
+    text-align: left;
+}
+
+.righttext {
+    text-align: right;
+}
